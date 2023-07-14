@@ -1,19 +1,22 @@
 from setuptools import setup
 
+
 setup(
     name="flake8-eol",
-    version="0.0.3",
+    version="0.0.4",
+    author="Claudio Scheer",
+    author_email="claudioscheer@protonmail.com",
     description="Flake8 plugin to enforce EOL consistency",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/claudioscheer/flake8-eol",
-    author="Claudio Scheer",
-    author_email="claudioscheer@protonmail.com",
-    install_requires=["flake8"],
     classifiers=[
         "Framework :: Flake8",
+        "Environment :: Console",
         "Intended Audience :: Developers",
-        "Topic :: Software Development :: Quality Assurance",
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Software Development :: Quality Assurance",
     ],
 )

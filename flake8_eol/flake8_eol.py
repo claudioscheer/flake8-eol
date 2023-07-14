@@ -1,11 +1,6 @@
 import ast
-import sys
 from typing import Any, Generator, Tuple, Type
-
-if sys.version_info < (3, 8):
-    import importlib_metadata
-else:
-    import importlib.metadata as importlib_metadata
+import importlib.metadata as importlib_metadata
 
 
 class EOLChecker:
@@ -23,6 +18,6 @@ class EOLChecker:
                 yield (
                     1,
                     1,
-                    "EOL001 '\\r\\n' at the end of the line is incorrect",
+                    "EOL001 replace '\\r\\n' at the end of the line with '\\n'",
                     type(self),
                 )

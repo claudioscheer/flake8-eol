@@ -1,3 +1,4 @@
+import os
 import ast
 import unittest
 from typing import Set
@@ -12,6 +13,10 @@ def _results(code: str) -> Set[str]:
 
 
 class TestEOL(unittest.TestCase):
+    def tearDown(self) -> None:
+        os.remove("test.py")
+        return super().tearDown()
+
     def test_no_code(self):
         code = ""
         self.assertEqual(_results(code), set())
@@ -27,7 +32,8 @@ class TestEOL(unittest.TestCase):
     def test_r_n_eol(self):
         code = "a = 1\r\n"
         self.assertEqual(
-            _results(code), {"1:1 EOL001 '\\r\\n' at the end of the line is incorrect"}
+            _results(code),
+            {"1:1 EOL001 replace '\\r\\n' at the end of the line with '\\n'"},
         )
 
 
