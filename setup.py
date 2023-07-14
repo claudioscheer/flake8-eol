@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="flake8-eol",
-    version="0.0.1",
+    version="0.0.3",
     description="Flake8 plugin to enforce EOL consistency",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
