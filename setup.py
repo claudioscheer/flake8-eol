@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="flake8-eol",
-    version="0.0.4",
+    version="0.0.7",
     author="Claudio Scheer",
     author_email="claudioscheer@protonmail.com",
     description="Flake8 plugin to enforce EOL consistency",
