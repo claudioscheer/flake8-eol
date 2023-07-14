@@ -3,10 +3,10 @@ from setuptools import setup
 
 setup(
     name="flake8-eol",
-    version="0.0.7",
+    version="0.0.8",
     author="Claudio Scheer",
     author_email="claudioscheer@protonmail.com",
-    description="Flake8 plugin to enforce EOL consistency",
+    description="Flake8 plugin to enforce Unix/Linux EOL consistency",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     classifiers=[

@@ -1,6 +1,12 @@
 # flake8-eol
 
-Flake8 plugin to enforce EOL consistency. The plugin simply checks if the first line of a file ends with '\r'. If do, it throws the warning EOL001.
+Flake8 plugin to enforce Unix/Linux EOL consistency. The plug-in simply checks that Python files' line endings are terminated with '\n' only.
+
+# Error codes
+
+| Error code | Description                                      |
+| :--------: | :----------------------------------------------- |
+|   EOL001   | Line endings are not consistent with Unix/Linux. |
 
 # Installation
 
